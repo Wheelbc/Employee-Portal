@@ -12,10 +12,9 @@
             background: linear-gradient(white, #f0f0f0);
             color: #000000;
         }
-        .header {
-            background-color: #08457E;
-            padding: 20px 0;
+        .header, .welcome-message, .settings-header, .contact-info {
             text-align: center;
+            margin-bottom: 20px;
         }
         .logo, .settings-logo {
             max-width: 150px;
@@ -46,9 +45,6 @@
         .description, .settings-description {
             margin-top: -15px; /* Adjust space between logo and description */
         }
-        .contact-info, .settings-links {
-            margin-top: 30px; /* Additional space from the last element */
-        }
         .settings-links a {
             margin-right: 20px; /* Space between settings links */
         }
@@ -62,9 +58,13 @@
             display: block; /* Ensure descriptions are block-level for spacing */
             margin-bottom: 20px; /* Space after the description */
         }
-        .settings-header, .welcome-message {
+        .settings-header {
             font-size: 24px;
             margin-bottom: 20px;
+        }
+        .welcome-message h2, .welcome-message p {
+            margin: 0;
+            padding: 0;
         }
     </style>
 </head>
@@ -93,11 +93,11 @@
             <p class="settings-header">Settings</p>
             <div class="settings-links">
                 <a href="ms-settings:network">
-                    <img src="https://healthlinkkiosk.blob.core.windows.net/psislogo/wifi-logo.png" alt="Network Settings" class="settings-logo">
+                    <img src="https://healthlinkkiosk.blob.core.windows.net/psislogo/360_F_603915624_Mmd8TFlhqWo8dVKdKM8utT5bgK8gS8FW.jpg" alt="Network Settings" class="settings-logo">
                     <p class="settings-description">Network Settings</p>
                 </a>
                 <a href="ms-settings:windowsupdate">
-                    <img src="https://healthlinkkiosk.blob.core.windows.net/psislogo/update-logo.png" alt="Windows Update" class="settings-logo">
+                    <img src="https://healthlinkkiosk.blob.core.windows.net/psislogo/1601884.png" alt="Windows Update" class="settings-logo">
                     <p class="settings-description">Windows Update</p>
                 </a>
             </div>
