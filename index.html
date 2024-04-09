@@ -17,14 +17,16 @@
             padding: 20px 0;
             text-align: center;
         }
-        .logo {
+        .logo, .settings-logo {
             max-width: 150px;
+            margin: 0 auto; /* Center logo */
+            display: block;
         }
-        .container {
+        .container, .settings-container {
             padding: 20px;
             text-align: center;
         }
-        .content {
+        .content, .settings-content {
             background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
             border-radius: 8px;
@@ -41,8 +43,18 @@
         a:hover {
             text-decoration: underline;
         }
-        .contact-info {
+        .description {
+            margin-top: -15px; /* Adjust space between logo and description */
+        }
+        .contact-info, .settings-links {
             margin-top: 30px; /* Additional space from the last element */
+        }
+        .settings-links a {
+            display: inline-block; /* Adjust based on layout preference */
+            margin-right: 20px; /* Space between settings links */
+        }
+        .settings-logo {
+            width: 50px; /* Smaller logos for settings */
         }
     </style>
 </head>
@@ -52,13 +64,24 @@
     </div>
     <div class="container">
         <div class="content">
-            <h1>Welcome to the Health Link Program</h1>
-            <p>Welcome to our Health Link kiosk. Please use the links below to navigate to the resources, or contact us if you need further assistance.</p>
-            <div>
-                <a href="https://id.myupdox.com/auth/realms/Updox/protocol/openid-connect/auth?scope=openid+profile+email+address+phone+groups&response_type=code&redirect_uri=https%3A%2F%2Fmyupdox.com%2Fui%2Foauth2%2Fcb%2Fkeycloak&state=84b8228e64&code_challenge_method=S256&nonce=DFzLEZ7SDMKKyq6cjxDQxQg1Y-f9Ll4klQFKQWLFL2E&client_id=Catalyst&code_challenge=cA2irjSJSVJ0puCciafsyHlh_qzNraFLXycLUmahivE">Access Updox</a>
-            </div>
+            <a href="https://id.myupdox.com/auth/realms/Updox/protocol/openid-connect/auth?scope=openid+profile+email+address+phone+groups&response_type=code&redirect_uri=https%3A%2F%2Fmyupdox.com%2Fui%2Foauth2%2Fcb%2Fkeycloak&state=84b8228e64&code_challenge_method=S256&nonce=DFzLEZ7SDMKKyq6cjxDQxQg1Y-f9Ll4klQFKQWLFL2E&client_id=Catalyst&code_challenge=cA2irjSJSVJ0puCciafsyHlh_qzNraFLXycLUmahivE">
+                <img src="https://healthlinkkiosk.blob.core.windows.net/psislogo/updox-logo.png" alt="Access Updox" class="logo">
+            </a>
+            <p class="description">Access Updox</p>
             <div class="contact-info">
                 For immediate assistance, please call us at: <strong>(123) 456-7890</strong>
+            </div>
+        </div>
+    </div>
+    <div class="settings-container">
+        <div class="settings-content">
+            <div class="settings-links">
+                <a href="ms-settings:network">
+                    <img src="https://healthlinkkiosk.blob.core.windows.net/psislogo/360_F_603915624_Mmd8TFlhqWo8dVKdKM8utT5bgK8gS8FW.jpg" alt="Open Network Settings" class="settings-logo">
+                </a>
+                <a href="ms-settings:windowsupdate">
+                    <img src="https://healthlinkkiosk.blob.core.windows.net/psislogo/1601884.png" alt="Open Windows Update" class="settings-logo">
+                </a>
             </div>
         </div>
     </div>
