@@ -33,28 +33,31 @@
             display: inline-block;
             margin: auto;
         }
-        a {
+        a, .settings-links a {
             color: #08457E;
             text-decoration: none;
             font-weight: bold;
             display: inline-block; /* Ensure link is centered as a block */
             margin: 20px 0; /* Ample space above and below the link */
         }
-        a:hover {
+        a:hover, .settings-links a:hover {
             text-decoration: underline;
         }
-        .description {
+        .description, .settings-description {
             margin-top: -15px; /* Adjust space between logo and description */
         }
         .contact-info, .settings-links {
             margin-top: 30px; /* Additional space from the last element */
         }
         .settings-links a {
-            display: inline-block; /* Adjust based on layout preference */
             margin-right: 20px; /* Space between settings links */
         }
         .settings-logo {
             width: 50px; /* Smaller logos for settings */
+        }
+        .settings-header {
+            font-size: 24px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -65,7 +68,7 @@
     <div class="container">
         <div class="content">
             <a href="https://id.myupdox.com/auth/realms/Updox/protocol/openid-connect/auth?scope=openid+profile+email+address+phone+groups&response_type=code&redirect_uri=https%3A%2F%2Fmyupdox.com%2Fui%2Foauth2%2Fcb%2Fkeycloak&state=84b8228e64&code_challenge_method=S256&nonce=DFzLEZ7SDMKKyq6cjxDQxQg1Y-f9Ll4klQFKQWLFL2E&client_id=Catalyst&code_challenge=cA2irjSJSVJ0puCciafsyHlh_qzNraFLXycLUmahivE">
-                <img src="https://healthlinkkiosk.blob.core.windows.net/psislogo/updox-logo.png" alt="Access Updox" class="logo">
+                <img src="URL_TO_UPDOX_LOGO" alt="Access Updox" class="logo">
             </a>
             <p class="description">Access Updox</p>
             <div class="contact-info">
@@ -75,15 +78,22 @@
     </div>
     <div class="settings-container">
         <div class="settings-content">
+            <p class="settings-header">Settings</p>
             <div class="settings-links">
                 <a href="ms-settings:network">
-                    <img src="https://healthlinkkiosk.blob.core.windows.net/psislogo/360_F_603915624_Mmd8TFlhqWo8dVKdKM8utT5bgK8gS8FW.jpg" alt="Open Network Settings" class="settings-logo">
+                    <img src="https://healthlinkkiosk.blob.core.windows.net/psislogo/360_F_603915624_Mmd8TFlhqWo8dVKdKM8utT5bgK8gS8FW.jpg" alt="Network Settings" class="settings-logo">
+                    <p class="settings-description">Network Settings</p>
                 </a>
                 <a href="ms-settings:windowsupdate">
-                    <img src="https://healthlinkkiosk.blob.core.windows.net/psislogo/1601884.png" alt="Open Windows Update" class="settings-logo">
+                    <img src="https://healthlinkkiosk.blob.core.windows.net/psislogo/1601884.png" alt="Windows Update" class="settings-logo">
+                    <p class="settings-description">Windows Update</p>
                 </a>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+
+
+
