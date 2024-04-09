@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta viewport="width=device-width, initial-scale=1.0">
     <title>Health Link Program</title>
     <style>
         body {
@@ -12,10 +12,9 @@
             background: linear-gradient(white, #f0f0f0);
             color: #000000;
         }
-        .header {
-            background-color: #08457E;
-            padding: 20px 0;
+        .header, .welcome-message, .settings-header, .contact-info {
             text-align: center;
+            margin-bottom: 20px;
         }
         .logo, .settings-logo {
             max-width: 150px;
@@ -46,9 +45,6 @@
         .description, .settings-description {
             margin-top: -15px; /* Adjust space between logo and description */
         }
-        .contact-info, .settings-links {
-            margin-top: 30px; /* Additional space from the last element */
-        }
         .settings-links a {
             margin-right: 20px; /* Space between settings links */
         }
@@ -62,7 +58,7 @@
             display: block; /* Ensure descriptions are block-level for spacing */
             margin-bottom: 20px; /* Space after the description */
         }
-        .settings-header, .welcome-message {
+        .settings-header {
             font-size: 24px;
             margin-bottom: 20px;
         }
