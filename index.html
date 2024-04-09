@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,20 +7,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Link Program</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        .contact-info { margin-top: 20px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(white, #f0f0f0);
+            color: #000000;
+        }
+        .header {
+            background-color: #08457E;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .logo {
+            max-width: 150px;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: auto;
+        }
+        a {
+            color: #08457E;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block; /* Ensure link is centered as a block */
+            margin: 20px 0; /* Ample space above and below the link */
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact-info {
+            margin-top: 30px; /* Additional space from the last element */
+        }
     </style>
 </head>
 <body>
-    <h1>Pharma-Safe Industrial Services</h1>
-    <h2>Health Link</h2>
-    <p>Welcome to our Health Link kiosk. Please use the link below to navigate to the resource, or contact us if you need further assistance.</p>
-    <ul>
-        <li><a href="https://myupdox.com/updox-ui/">Access Updox</a></li>
-    </ul>
-    <div class="support-number">
-		<h3>Support Number</h3>
-		<p>Contact Support Helpline, please call us at: <strong>(123) 456-7890</strong></p>
+    <div class="header">
+        <img src="https://raw.githubusercontent.com/Wheelbc/HealthLink-Dashboard/main/assets/pharma-safe_logo_white-web-01.png" alt="Pharma-Safe Industrial Services Logo" class="logo">"
+    </div>
+    <div class="container">
+        <div class="content">
+            <h1>Welcome to the Health Link Program</h1>
+            <p>Welcome to our Health Link kiosk. Please use the links below to navigate to the resources, or contact us if you need further assistance.</p>
+            <div>
+                <a href="https://myupdox.com/updox-ui/">Access Updox</a>
+            </div>
+            <div class="contact-info">
+                For immediate assistance, please call us at: <strong>(123) 456-7890</strong>
+            </div>
+        </div>
     </div>
 </body>
 </html>
