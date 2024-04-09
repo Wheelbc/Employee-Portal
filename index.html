@@ -44,7 +44,9 @@
             text-decoration: underline;
         }
         .description, .settings-description {
-            margin-top: -15px; /* Adjust space between logo and description */
+             margin-top: 0; /* Adjust top margin for descriptions */
+            display: block; /* Ensure descriptions are block-level for spacing */
+            margin-bottom: 20px; /* Space after the description */
         }
         .contact-info, .settings-links {
             margin-top: 30px; /* Additional space from the last element */
@@ -54,6 +56,8 @@
         }
         .settings-logo {
             width: 50px; /* Smaller logos for settings */
+            display: block; /* Make logo block-level for proper spacing */
+            margin: 0 auto 10px; /* Center logo and add space below */
         }
         .settings-header {
             font-size: 24px;
@@ -68,7 +72,7 @@
     <div class="container">
         <div class="content">
             <a href="https://id.myupdox.com/auth/realms/Updox/protocol/openid-connect/auth?scope=openid+profile+email+address+phone+groups&response_type=code&redirect_uri=https%3A%2F%2Fmyupdox.com%2Fui%2Foauth2%2Fcb%2Fkeycloak&state=84b8228e64&code_challenge_method=S256&nonce=DFzLEZ7SDMKKyq6cjxDQxQg1Y-f9Ll4klQFKQWLFL2E&client_id=Catalyst&code_challenge=cA2irjSJSVJ0puCciafsyHlh_qzNraFLXycLUmahivE">
-                <img src="URL_TO_UPDOX_LOGO" alt="Access Updox" class="logo">
+                <img src="https://healthlinkkiosk.blob.core.windows.net/psislogo/updox-logo.png" alt="Access Updox" class="logo">
             </a>
             <p class="description">Access Updox</p>
             <div class="contact-info">
